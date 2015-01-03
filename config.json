@@ -1,11 +1,11 @@
 {
   "locals": {
-    "url": "http://localhost:8080",
+    "url": "/index.html",
     "name": "Glenda Graff",
     "owner": "Glenda Graff",
     "description": "Food and Décor Concepts • Event Management",
     "nav": {
-      "Food & Décor Concepts": "/food-decor/",
+      "Food & Décor": "/food-decor/",
       "Home": "/home/",
       "Weddings": "/weddings/",
       "Contact": "/#contact"

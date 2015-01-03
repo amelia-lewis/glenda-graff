@@ -14,10 +14,11 @@ html(lang='en')
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Muli:300,400')
       link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
       link(rel='stylesheet', href='/styles/style.css')
+      link(rel='stylesheet', href='/styles/slicknav.css')
       link(rel="shortcut icon", type="image/x-icon", href="/favicon.ico")
   
   body(class=bodyclass)
-    header.header
+    header
       .content-wrap
         block header
           .logo
@@ -26,7 +27,7 @@ html(lang='en')
               a(href=locals.url)= locals.name
 
           .nav
-            ul
+            ul#menu
               for href, title in locals.nav
                 - var _href  = page && page.filepath.relative.split("/")[0];
                 - var active = page && href.match(_href);
