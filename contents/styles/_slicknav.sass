@@ -1,0 +1,38 @@
+.slicknav_menu
+  background: white !important
+  height: 60px
+  width: 100%
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1)
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+  padding: 0 !important
+
+  .slicknav_btn
+    background: none
+    margin: 0
+    padding: 0
+    width: 60px
+    height: 60px
+
+    .slicknav_menutxt
+      display: none
+
+    .slicknav_icon
+      margin: 0
+      width: 60px
+      height: 60px
+
+      i
+        font-size: 1.5em
+        padding: 18px 19px
+
+// SHOW + HIDE HEADER
+html.desktop
+  .slicknav_menu
+    display: none
+
+html.mobile
+  .slicknav_menu
+    display: block
