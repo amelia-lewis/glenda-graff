@@ -5,6 +5,7 @@
   padding: 0
   margin-top: 80px
   background:
+    color: $dk-grey
     image: url('img/1.jpg')
     position: fixed
     size: cover
@@ -34,10 +35,15 @@
       size: auto 154%
       repeat: no-repeat
 
-  @media screen and (max-width: 1024px)
+  @media screen and (max-width: 768px)
     .logo
-      width: 50%
-      height: 50%
+      width: 240px
+      height: 170px
+
+  @media screen and (max-width: 320px)
+    .logo
+      width: 200px
+      height: 140px
 
   @media screen and (max-width: 480px)
     height: 400px

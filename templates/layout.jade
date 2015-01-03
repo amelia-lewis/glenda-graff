@@ -34,6 +34,11 @@ html(lang='en')
 
                 li(class=(active ? "active" : ""))
                   a(href=href)= title
+
+    .mobile-logo
+      img(src='/styles/img/icon.png')
+      h1
+        a(href=locals.url)= locals.name
     
     #content
       block content

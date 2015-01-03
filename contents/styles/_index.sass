@@ -8,6 +8,9 @@
     margin: 20px auto
     text-align: justify
 
+    @media screen and (max-width: 480px)
+      width: 100%
+
 
 // =========================
 // GALLERIES
@@ -73,6 +76,31 @@
 
         &:after
           content: 'Weddings'
+
+  @media screen and (max-width: 480px)
+    .container
+      margin-top: 20px
+
+      .item
+        float: none
+        display: block
+        margin: 20px auto !important
+
+  @media screen and (max-width: 320px)
+    .container
+      .item
+        width: 220px
+        height: 220px
+
+        &:after
+          padding: 98px 0
+
+html.mobile
+  .galleries
+    .container
+      .item
+        &:after
+          opacity: 1
 
 
 // =========================

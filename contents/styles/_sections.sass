@@ -2,13 +2,14 @@ section
   padding: 80px 0
 
   @media screen and (max-width: 480px)
-    padding: 40px 0
+    padding: 50px 0
 
   &.image
     height: 300px
     padding: 0
     z-index: 10
     background:
+      color: $dk-grey
       position: fixed
       size: 100%
       repeat: no-repeat
@@ -18,3 +19,6 @@ section
 
     &.image-2
       background-image: url('img/3.jpg')
+
+    @media screen and (max-width: 480px)
+      height: 180px !important
