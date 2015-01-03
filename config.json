@@ -7,7 +7,8 @@
     "nav": {
       "Food & Décor Concepts": "/food-decor/",
       "Home": "/home/",
-      "Weddings": "/weddings/"
+      "Weddings": "/weddings/",
+      "Contact": "/#contact"
     }
   },
   "plugins": [
