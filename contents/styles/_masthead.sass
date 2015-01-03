@@ -7,7 +7,7 @@
   background:
     color: $dk-grey
     image: url('img/1.jpg')
-    position: fixed
+    position: center top
     size: cover
     repeat: no-repeat
 
@@ -48,6 +48,17 @@
   @media screen and (max-width: 480px)
     height: 400px
 
+html.desktop
+  .masthead.desktop-only
+    display: block
+
+  .masthead.mobile-only
+    display: none
+
 html.mobile
-  .masthead
+  .masthead.mobile-only
+    display: block
     margin-top: 50px
+
+  .masthead.desktop-only
+    display: none

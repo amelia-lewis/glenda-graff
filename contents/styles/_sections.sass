@@ -22,3 +22,17 @@ section
 
     @media screen and (max-width: 480px)
       height: 180px !important
+
+html.desktop
+  .image.desktop-only
+    display: block
+
+  .image.mobile-only
+    display: none
+
+html.mobile
+  .image.mobile-only
+    display: block
+
+  .image.desktop-only
+    display: none

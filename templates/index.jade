@@ -1,16 +1,20 @@
 extends layout
 
 block content
-  section.masthead(data-stellar-background-ratio='0.5')
+  section.masthead.desktop-only(data-stellar-background-ratio='0.5')
+    .logo
+  section.masthead.mobile-only
     .logo
 
   include partials/about
 
-  section.image.image-1(data-stellar-background-ratio='0.5')
+  section.image.image-1.desktop-only(data-stellar-background-ratio='0.5')
+  section.image.image-1.mobile-only
 
   include partials/galleries
 
-  section.image.image-2(data-stellar-background-ratio='0.5')
+  section.image.image-2.desktop-only(data-stellar-background-ratio='0.5')
+  section.image.image-2.mobile-only
 
   include partials/contact
 
