@@ -21,6 +21,7 @@ html(lang='en')
       .content-wrap
         block header
           .logo
+            img(src='/styles/img/icon.png')
             h1
               a(href=locals.url)= locals.name
 
@@ -41,6 +42,6 @@ html(lang='en')
         block footer
           .copy
             p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; website by&nbsp;
-              a(href='https://amelialewis.com.au') Amelia Lewis
+              a(href='http://amelialewis.com.au') Amelia Lewis
 
     include partials/scripts
