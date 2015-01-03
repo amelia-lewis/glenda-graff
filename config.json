@@ -1,9 +1,14 @@
 {
   "locals": {
     "url": "http://localhost:8080",
-    "name": "GCG Glenda Graff",
+    "name": "Glenda Graff",
     "owner": "Glenda Graff",
-    "description": "Food and Décor Concepts • Event Management"
+    "description": "Food and Décor Concepts • Event Management",
+    "nav": {
+      "Food & Décor Concepts": "/food-decor/",
+      "Home": "/home/",
+      "Weddings": "/weddings/"
+    }
   },
   "plugins": [
     "./plugins/paginator.coffee",

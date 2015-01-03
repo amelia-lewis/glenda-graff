@@ -1,29 +1,18 @@
 extends layout
 
 block content
-  include author
-  each article in articles
-    article.article.intro
-      header
-        p.date
-          span= moment.utc(article.date).format('DD. MMMM YYYY')
-        h2
-          a(href=article.url)= article.title
-      section.content
-        if article.intro.length > 0
-          | !{ typogr(article.intro).typogrify() }
-        if article.hasMore
-          p.more
-            a(href=article.url) more
+  section.masthead(data-stellar-background-ratio='0.5')
+    .logo
 
-block prepend footer
-  div.nav
-    if prevPage
-      a(href=prevPage.url) « Newer
-    else
-      a(href='/archive.html') « Archives
-    if nextPage
-      a(href=nextPage.url) Next page »
+  include partials/about
 
+  //- section.index
+  //-   .content
+  //-     h1 Glenda Graff
+  //-     p Since arriving in Australia in 1995 from South Africa, Glenda Graff has established herself as one of Sydney's leading wedding and party planners. A qualified chef, Glenda offers her services as a caterer, food and décor stylist and event manager. Glenda's wealth of experience ensures that your function, from concept through to planning and execution is seamless.
+  //-     p Whether you are planning a wedding, party or corporate function, Glenda and her team of professionals will ensure that your function is unique, distinct and exceptional.
 
-
+  //-     .button-container
+  //-       a.button Food &amp; D&eacute;cor
+  //-       a.button Home
+  //-       a.button Weddings

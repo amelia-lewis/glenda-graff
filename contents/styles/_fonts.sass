@@ -1,0 +1,51 @@
+*, body
+  font-family: 'Muli'
+
+a
+  color: inherit
+  text-decoration: none
+
+h1
+  text-transform: uppercase
+  font-size: 2.5em
+  margin: 0 0
+  text-align: center
+
+h2
+  font-size: 2em
+  text-align: center
+  margin-top: 10px
+
+p
+  text-align: justify
+
+.headline
+  font-size: 1.5em
+  text-align: center
+  font-weight: 700
+
+  @media screen and (max-width: 1024px)
+    font-size: 1.2em
+
+.button
+  display: block
+  padding: 20px 0
+  width: 300px
+  border: 1px solid black
+  margin: 0 auto 10px
+  text-transform: uppercase
+  text-align: center
+  font-size: 1.2em
+  +transition(all 400ms)
+
+  &:hover
+    background: black
+    color: white
+
+  &:active
+    background: black
+    color: white
+    +transform(scale(0.97))
+
+  &:last-of-type
+    margin-bottom: 0
