@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width">
     <title>Glenda Graff
     </title>
-    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Food and Décor Concepts • Event Management">
+    <link rel="alternate" href="/index.html/feed.xml" type="application/rss+xml" title="Food and Décor Concepts • Event Management">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/slicknav.css">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="content-wrap">
         <div class="logo"><img src="/styles/img/icon.png">
-          <h1><a href="http://localhost:8080">Glenda Graff</a></h1>
+          <h1><a href="/index.html">Glenda Graff</a></h1>
         </div>
         <div class="nav">
-          <ul>
-            <li><a href="/food-decor/">Food &amp; Décor Concepts</a></li>
+          <ul id="menu">
+            <li><a href="/food-decor/">Food &amp; Décor</a></li>
             <li><a href="/home/">Home</a></li>
             <li><a href="/weddings/">Weddings</a></li>
             <li><a href="/#contact">Contact</a></li>
@@ -28,8 +29,14 @@
         </div>
       </div>
     </header>
+    <div class="mobile-logo"><img src="/styles/img/icon.png">
+      <h1><a href="/index.html">Glenda Graff</a></h1>
+    </div>
     <div id="content">
-      <section data-stellar-background-ratio="0.5" class="masthead">
+      <section data-stellar-background-ratio="0.5" class="masthead desktop-only">
+        <div class="logo"></div>
+      </section>
+      <section class="masthead mobile-only">
         <div class="logo"></div>
       </section>
       <section class="about">
@@ -39,14 +46,16 @@
           <p>Whether you are planning a wedding, party or corporate function, Glenda and her team of professionals will ensure that your function is unique, distinct and exceptional.</p>
         </div>
       </section>
-      <section data-stellar-background-ratio="0.5" class="image image-1"></section>
+      <section data-stellar-background-ratio="0.5" class="image image-1 desktop-only"></section>
+      <section class="image image-1 mobile-only"></section>
       <section class="galleries">
         <div class="content-wrap">
           <h2>Galleries</h2>
           <div class="container"><a href="/food-decor" class="item food-decor"></a><a href="/home" class="item home"></a><a href="/weddings" class="item weddings"></a></div>
         </div>
       </section>
-      <section data-stellar-background-ratio="0.5" class="image image-2"></section>
+      <section data-stellar-background-ratio="0.5" class="image image-2 desktop-only"></section>
+      <section class="image image-2 mobile-only"></section>
       <section id="contact" class="contact">
         <div class="content-wrap">
           <h2>Contact</h2>
@@ -79,7 +88,19 @@
     <script src="http://snapwidget.com/js/snapwidget.js"></script>
     <script type="text/javascript" src="/js/device.min.js"></script>
     <script type="text/javascript" src="/js/ease.js"></script>
+    <script type="text/javascript" src="/js/jquery.slicknav.js"></script>
+    <script>
+      $(function(){
+      $('#menu').slicknav();
+      });
+    </script>
     <script type="text/javascript" src="/js/jquery.stellar.min.js"></script>
     <script>$(window).stellar();</script>
+    <script type="text/javascript" src="/js/jquery.collagePlus.min.js"></script>
+    <script>
+      $(window).load(function () {
+      $('.collage').collagePlus();
+      });
+    </script>
   </body>
 </html>

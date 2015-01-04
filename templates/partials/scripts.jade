@@ -11,3 +11,8 @@ script
 script(type="text/javascript", src="/js/jquery.stellar.min.js")
 script
   | $(window).stellar();
+script(type="text/javascript", src="/js/jquery.collagePlus.min.js")
+script
+  | $(window).load(function () {
+  | $('.collage').collagePlus();
+  | });

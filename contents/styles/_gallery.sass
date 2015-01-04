@@ -1,0 +1,49 @@
+.gallery-header
+  width: 100%
+  height: 200px
+  position: relative
+  padding: 0
+  margin-top: 80px
+  background:
+    color: $dk-grey
+    position: center center
+    size: cover
+    repeat: no-repeat
+
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    background: rgba(black, 0.1)
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+  &.food-decor
+    background:
+      image: url('img/food-decor-blur.jpg')
+
+  &.home
+    background:
+      image: url('img/home-blur.jpg')
+
+  &.weddings
+    background:
+      image: url('img/weddings-blur.jpg')
+
+  h1
+    color: white
+    text-align: center
+    position: relative
+    top: 50%
+    left: 50%
+    +transform(translate3d(-50%, -50%, 0))
+
+html.mobile
+  .gallery-header
+    margin-top: 50px
+
+.gallery-content
+  .collage
+    padding: 10px

@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width">
     <title>README - Glenda Graff
     </title>
-    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Food and Décor Concepts • Event Management">
+    <link rel="alternate" href="/index.html/feed.xml" type="application/rss+xml" title="Food and Décor Concepts • Event Management">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/slicknav.css">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   </head>
   <body class="article-detail">
-    <header class="header">
+    <header>
       <div class="content-wrap">
         <h1>README</h1>
         <p class="author">Written by <span class="author"><a href="mailto:the@wintersmith.eu">The Wintersmith</a></span>
         </p>
       </div>
     </header>
+    <div class="mobile-logo"><img src="/styles/img/icon.png">
+      <h1><a href="/index.html">Glenda Graff</a></h1>
+    </div>
     <div id="content">
       <article class="article">
         <section class="content"><p>Welcome to your new blog! This is the default blog template with <span class="caps">RSS</span>, pagination and an archive. There are other templates available — run <code>wintersmith new --help</code> to list&nbsp;them.</p>
@@ -98,7 +102,19 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     <script src="http://snapwidget.com/js/snapwidget.js"></script>
     <script type="text/javascript" src="/js/device.min.js"></script>
     <script type="text/javascript" src="/js/ease.js"></script>
+    <script type="text/javascript" src="/js/jquery.slicknav.js"></script>
+    <script>
+      $(function(){
+      $('#menu').slicknav();
+      });
+    </script>
     <script type="text/javascript" src="/js/jquery.stellar.min.js"></script>
     <script>$(window).stellar();</script>
+    <script type="text/javascript" src="/js/jquery.collagePlus.min.js"></script>
+    <script>
+      $(window).load(function () {
+      $('.collage').collagePlus();
+      });
+    </script>
   </body>
 </html>

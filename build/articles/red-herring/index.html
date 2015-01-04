@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width">
     <title>A red herring - Glenda Graff
     </title>
-    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Food and Décor Concepts • Event Management">
+    <link rel="alternate" href="/index.html/feed.xml" type="application/rss+xml" title="Food and Décor Concepts • Event Management">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/slicknav.css">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   </head>
   <body class="article-detail">
-    <header class="header">
+    <header>
       <div class="content-wrap">
         <h1>A red herring</h1>
         <p class="author">Written by <span class="author"><a href="mailto:baker@nasa.gov">Miss Baker</a></span>
         </p>
       </div>
     </header>
+    <div class="mobile-logo"><img src="/styles/img/icon.png">
+      <h1><a href="/index.html">Glenda Graff</a></h1>
+    </div>
     <div id="content">
       <article class="article">
         <section class="content"><p>A long time ago, when the world was young — someone put some food on their tongue.
@@ -58,7 +62,19 @@ Because, believe it or not, a banana is not a&nbsp;friend.</p>
     <script src="http://snapwidget.com/js/snapwidget.js"></script>
     <script type="text/javascript" src="/js/device.min.js"></script>
     <script type="text/javascript" src="/js/ease.js"></script>
+    <script type="text/javascript" src="/js/jquery.slicknav.js"></script>
+    <script>
+      $(function(){
+      $('#menu').slicknav();
+      });
+    </script>
     <script type="text/javascript" src="/js/jquery.stellar.min.js"></script>
     <script>$(window).stellar();</script>
+    <script type="text/javascript" src="/js/jquery.collagePlus.min.js"></script>
+    <script>
+      $(window).load(function () {
+      $('.collage').collagePlus();
+      });
+    </script>
   </body>
 </html>
