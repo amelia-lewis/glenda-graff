@@ -22,7 +22,8 @@ html(lang='en')
       .content-wrap
         block header
           .logo
-            img(src='/styles/img/icon.png')
+            a(href=locals.url)
+              img(src='/styles/img/icon.png')
             h1
               a(href=locals.url)= locals.name
 

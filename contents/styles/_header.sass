@@ -60,7 +60,6 @@ header
       li
         float: left
         margin: 0 20px
-        padding: 30px 0
         position: relative
 
         &:after
@@ -70,12 +69,16 @@ header
           height: 10px
           background: $beige
           position: relative
-          bottom: -20px
+          bottom: 10px
           left: 50%
           opacity: 0
           +transform(translate3d(-50%, 0, 0) scale(1, 0))
           +transform-origin(center bottom)
           +transition(all 200ms)
+
+        a
+          display: block
+          padding: 30px 0
 
         &:hover, &.active
           &:after
