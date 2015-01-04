@@ -9,25 +9,21 @@
       width: 30px
       float: left
 
+      i
+        +transition(all 300ms)
+
     .details
       float: left
       position: relative
+      +transition(all 300ms)
 
       p
         margin: 0
 
-      &:after
-        content: ''
-        position: absolute
-        display: block
-        width: 0
-        height: 2px
-        background: $beige
-        bottom: -3px
-        left: 0
-        +transition(all 300ms)
-
     &:hover
+      .icon
+        i
+          color: $beige
+
       .details
-        &:after
-          width: 100%
+        color: $beige
