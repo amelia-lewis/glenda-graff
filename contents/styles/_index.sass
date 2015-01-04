@@ -120,6 +120,23 @@ html.mobile
 
     .details
       float: left
+      position: relative
 
       p
         margin: 0
+
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 0
+        height: 2px
+        background: $beige
+        bottom: -3px
+        left: 0
+        +transition(all 300ms)
+
+    &:hover
+      .details
+        &:after
+          width: 100%
