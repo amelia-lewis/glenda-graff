@@ -1,21 +1,3 @@
-// =========================
-// ABOUT
-// =========================
-
-.about
-  p
-    width: 60%
-    margin: 20px auto
-    text-align: justify
-
-    @media screen and (max-width: 480px)
-      width: 100%
-
-
-// =========================
-// GALLERIES
-// =========================
-
 .galleries
   .container
     text-align: center
@@ -101,42 +83,3 @@ html.mobile
       .item
         &:after
           opacity: 1
-
-
-// =========================
-// CONTACT
-// =========================
-
-.contact
-  .row
-    clear: both
-    height: 40px
-    margin: 0 auto
-    width: 230px
-
-    .icon
-      width: 30px
-      float: left
-
-    .details
-      float: left
-      position: relative
-
-      p
-        margin: 0
-
-      &:after
-        content: ''
-        position: absolute
-        display: block
-        width: 0
-        height: 2px
-        background: $beige
-        bottom: -3px
-        left: 0
-        +transition(all 300ms)
-
-    &:hover
-      .details
-        &:after
-          width: 100%
