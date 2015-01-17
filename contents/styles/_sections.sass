@@ -23,8 +23,14 @@ section
     &.image-3
       background-image: url('img/3.jpg')
 
+    @media screen and (max-width: 1600px)
+      background-size: auto 300%
+
     @media screen and (max-width: 480px)
       height: 180px !important
+
+    &.mobile-only
+      background-size: cover
 
 html.desktop
   .image.desktop-only

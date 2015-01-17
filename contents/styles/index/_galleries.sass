@@ -77,7 +77,16 @@
         &:after
           content: 'Weddings'
 
-  @media screen and (max-width: 480px)
+  @media screen and (max-width: 1024px)
+    .container
+      text-align: center
+      .home, .food-decor, .weddings
+        margin: 0 20px 0 !important
+
+      .weddings
+        margin-top: 20px !important
+
+  @media screen and (max-width: 800px)
     .container
       margin-top: 20px
 
@@ -99,5 +108,5 @@ html.mobile
   .galleries
     .container
       .item
-        &:after
+        &:after, &:before
           opacity: 1

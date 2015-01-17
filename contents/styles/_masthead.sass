@@ -35,6 +35,12 @@
       size: auto 154%
       repeat: no-repeat
 
+  &.mobile-only
+    background-size: cover
+
+  @media screen and (max-width: 1600px)
+    background-size: auto 100%
+
   @media screen and (max-width: 768px)
     .logo
       width: 240px
@@ -62,3 +68,7 @@ html.mobile
 
   .masthead.desktop-only
     display: none
+
+@media screen and (max-width: 1024px)
+  .masthead
+    margin-top: 50px

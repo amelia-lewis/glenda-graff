@@ -64,10 +64,18 @@
       line-height: 1.85em
 
 // SHOW + HIDE HEADER
-html.desktop
+// html.desktop
+//   .slicknav_menu, .mobile-logo
+//     display: none
+
+@media screen and (min-width: 1024px)
   .slicknav_menu, .mobile-logo
     display: none
 
-html.mobile
+// html.mobile
+//   .slicknav_menu, .mobile-logo
+//     display: block
+
+@media screen and (max-width: 1024px)
   .slicknav_menu, .mobile-logo
     display: block

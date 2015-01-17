@@ -86,10 +86,18 @@ header
             +transform(translate3d(-50%, 0, 0) scale(1, 1))
 
 // SHOW + HIDE HEADER
-html.desktop
+// html.desktop
+//   header
+//     display: block
+
+@media screen and (min-width: 1024px)
   header
     display: block
 
-html.mobile
+// html.mobile
+//   header
+//     display: none
+
+@media screen and (max-width: 1024px)
   header
     display: none
