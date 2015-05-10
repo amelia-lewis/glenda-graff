@@ -4,12 +4,6 @@
   position: relative
   padding: 0
   margin-top: 80px
-  // background:
-  //   color: $dk-grey
-  //   image: url('img/1.jpg')
-  //   position-x: center !important
-  //   size: 100%
-  //   repeat: no-repeat
 
   &:after
     content: ''
@@ -38,8 +32,8 @@
   &.mobile-only
     background-size: cover
 
-  // @media screen and (max-width: 1600px)
-  //   background-size: auto 100%
+  @media screen and (max-width: 1024px)
+    margin-top: 50px
 
   @media screen and (max-width: 768px)
     .logo
@@ -53,22 +47,3 @@
 
   @media screen and (max-width: 480px)
     height: 400px
-
-html.desktop
-  .masthead.desktop-only
-    display: block
-
-  .masthead.mobile-only
-    display: none
-
-html.mobile
-  .masthead.mobile-only
-    display: block
-    margin-top: 50px
-
-  .masthead.desktop-only
-    display: none
-
-@media screen and (max-width: 1024px)
-  .masthead
-    margin-top: 50px
