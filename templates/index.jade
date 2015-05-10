@@ -1,24 +1,19 @@
 extends layout
 
 block content
-  section.masthead.desktop-only(data-stellar-background-ratio='0.5')
-    .logo
-  section.masthead.mobile-only
+  section.masthead.parallax-window(data-parallax="scroll", data-image-src="/styles/img/1.jpg")
     .logo
 
   include partials/about
 
-  section.image.image-1.desktop-only(data-stellar-background-ratio='0.5')
-  section.image.image-1.mobile-only
+  section.image.parallax-window(data-parallax="scroll", data-image-src="/styles/img/2.jpg")
 
   include partials/galleries
 
-  section.image.image-2.desktop-only(data-stellar-background-ratio='0.5')
-  section.image.image-2.mobile-only
+  section.image.parallax-window(data-parallax="scroll", data-image-src="/styles/img/4.jpg")
 
   include partials/testimonials
 
-  section.image.image-3.desktop-only(data-stellar-background-ratio='0.5')
-  section.image.image-3.mobile-only
+  section.image.parallax-window(data-parallax="scroll", data-image-src="/styles/img/3.jpg")
 
   include partials/contact

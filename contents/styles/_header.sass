@@ -41,6 +41,7 @@ header
       left: 50%
       opacity: 0
       +transform(translate3d(-50%, 0, 0) scale(1, 0))
+      -ms-transform: translateX(-50%) scale(1, 0)
       +transform-origin(center bottom)
       +transition(all 200ms)
 
@@ -48,6 +49,7 @@ header
       &:after
         opacity: 1
         +transform(translate3d(-50%, 0, 0) scale(1, 1))
+        -ms-transform: translateX(-50%) scale(1, 1)
 
   .nav
     text-transform: uppercase
@@ -73,6 +75,7 @@ header
           left: 50%
           opacity: 0
           +transform(translate3d(-50%, 0, 0) scale(1, 0))
+          -ms-transform: translateX(-50%) scale(1, 0)
           +transform-origin(center bottom)
           +transition(all 200ms)
 
@@ -84,6 +87,7 @@ header
           &:after
             opacity: 1
             +transform(translate3d(-50%, 0, 0) scale(1, 1))
+            -ms-transform: translateX(-50%) scale(1, 1)
 
 // SHOW + HIDE HEADER
 // html.desktop
