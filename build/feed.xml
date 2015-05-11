@@ -5,13 +5,13 @@
     <atom:link href="/index.html/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>/index.html</link>
     <description>Food and Décor Concepts • Event Management</description>
-    <pubDate>Tue, 30 Apr 2013 10:00:00 +1000</pubDate>
+    <pubDate>Mon, 29 Apr 2013 20:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>README</title>
       <link>/index.html/articles/hello-world/</link>
-      <pubDate>Tue, 30 Apr 2013 10:00:00 +1000</pubDate>
+      <pubDate>Mon, 29 Apr 2013 20:00:00 -0400</pubDate>
       <guid isPermaLink="true">/index.html/articles/hello-world/</guid>
       <author></author>
       <description>&lt;p&gt;Welcome to your new blog! This is the default blog template with RSS, pagination and an archive. There are other templates available — run &lt;code&gt;wintersmith new --help&lt;/code&gt; to list them.&lt;/p&gt;
@@ -79,7 +79,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     <item>
       <title>A red herring</title>
       <link>/index.html/articles/red-herring/</link>
-      <pubDate>Mon, 01 Apr 2013 11:00:00 +1100</pubDate>
+      <pubDate>Sun, 31 Mar 2013 20:00:00 -0400</pubDate>
       <guid isPermaLink="true">/index.html/articles/red-herring/</guid>
       <author></author>
       <description>&lt;p&gt;A long time ago, when the world was young — someone put some food on their tongue.
@@ -107,7 +107,7 @@ Because, believe it or not, a banana is not a friend.&lt;/p&gt;
     <item>
       <title>Code and stuff!</title>
       <link>/index.html/articles/another-test/</link>
-      <pubDate>Mon, 01 Oct 2012 15:00:00 +1000</pubDate>
+      <pubDate>Mon, 01 Oct 2012 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">/index.html/articles/another-test/</guid>
       <author></author>
       <description>&lt;p&gt;Syntax highlighting with &lt;a href=&quot;http://softwaremaniacs.org/soft/highlight/en/&quot;&gt;highlight.js&lt;/a&gt;.
@@ -204,7 +204,7 @@ The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmb
     <item>
       <title>Markdown syntax</title>
       <link>/index.html/articles/markdown-syntax/</link>
-      <pubDate>Thu, 02 Feb 2012 11:00:00 +1100</pubDate>
+      <pubDate>Wed, 01 Feb 2012 19:00:00 -0500</pubDate>
       <guid isPermaLink="true">/index.html/articles/markdown-syntax/</guid>
       <author></author>
       <description>&lt;p&gt;Full markdown syntax taken from John Gruber’s &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Daring Fireball&lt;/a&gt;.
@@ -862,7 +862,7 @@ _   underscore
     <item>
       <title>Taketori Monogatari</title>
       <link>/index.html/articles/bamboo-cutter/</link>
-      <pubDate>Wed, 01 Feb 2012 11:00:00 +1100</pubDate>
+      <pubDate>Tue, 31 Jan 2012 19:00:00 -0500</pubDate>
       <guid isPermaLink="true">/index.html/articles/bamboo-cutter/</guid>
       <author></author>
       <description>&lt;p&gt;Long, long ago, there lived an old bamboo wood-cutter.&lt;/p&gt;
