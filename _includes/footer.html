@@ -6,11 +6,11 @@
 
     <ul class="contact-list">
       {%- if site.email -%}
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><a class="link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
       {%- endif -%}
 
       {%- if site.phone -%}
-        <li><a href="tel:{{ site.phone }}">{{ site.phone_pretty }}</a></li>
+        <li><a class="link" href="tel:{{ site.phone }}">{{ site.phone_pretty }}</a></li>
       {%- endif -%}
 
       {%- if site.address -%}
@@ -18,8 +18,8 @@
       {%- endif -%}
     </ul>
   </div>
-
-  <div class="footer-copyright">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.owner }} — Website by <a href="http://amelia-lewis.com/" target="_blank">Amelia Lewis</a></p>
-  </div>
 </footer>
+
+<div class="footer-copyright">
+  <p>&copy; {{ site.time | date: '%Y' }} {{ site.owner }} — Website by <a href="http://amelia-lewis.com/" target="_blank">Amelia Lewis</a></p>
+</div>

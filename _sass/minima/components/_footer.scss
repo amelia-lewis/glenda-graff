@@ -20,7 +20,7 @@
       margin: 0 0 $spacer-sm;
 
       a {
-        display: flex;
+        display: inline-flex;
         align-items: center;
 
         .svg-icon {
@@ -29,25 +29,25 @@
       }
     }
   }
+}
 
-  .footer-copyright {
-    background: $color-primary;
-    padding: $spacer-smd $spacer-md;
-    text-align: center;
+.footer-copyright {
+  background: $color-primary;
+  padding: $spacer-smd $spacer-md;
+  text-align: center;
 
-    p {
-      margin: 0;
-      color: rgba(white, 0.6);
-      font-size: 0.8em;
+  p {
+    margin: 0;
+    color: rgba(white, 0.6);
+    font-size: 0.8em;
 
-      a {
-        border-bottom: 1px solid rgba(white, 0.6);
-        transition: all 400ms;
+    a {
+      border-bottom: 1px solid rgba(white, 0.6);
+      transition: all 400ms;
 
-        &:hover {
-          color: white;
-          border-color: white;
-        }
+      &:hover {
+        color: white;
+        border-color: white;
       }
     }
   }
