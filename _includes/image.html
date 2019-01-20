@@ -1,0 +1,11 @@
+<div class="margin-y-rel">
+  <figure class="content-grid content-grid--{{ include.columns }}">
+    {% assign sources = include.src | split: '|' %}
+    {% assign captions = include.caption | split: '|' %}
+    {% for src in sources %}
+      {% assign cur_index = forloop.index | minus: 1 %}
+      {% assign cur_caption = captions[cur_index] %}
+      {% include image_tag.html src=src caption=cur_caption %}
+    {% endfor %}
+  </figure>
+</div>

@@ -1,0 +1,8 @@
+<div class="video js-responsive-video">
+  <div class="video__responsive">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  {% if include.caption %}
+    <div class="video__caption">{{ include.caption | strip }}</div>
+  {% endif %}
+</div>

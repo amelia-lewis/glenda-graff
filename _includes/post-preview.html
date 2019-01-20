@@ -1,0 +1,39 @@
+{% if include.post.external_url %}
+  {% assign link_to_url = include.post.external_url %}
+  {% assign link_to_target = "_blank" %}
+{% else %}
+  {% assign link_to_url = include.post.url %}
+  {% assign link_to_target = "_self" %}
+{% endif %}
+<div class="post-preview">
+  <div class="post-preview__inner">
+    <div class="post-preivew__text">
+      <div class="post-preview__tag">
+        {% if include.up_next == "true" %}
+          Up Next
+        {% else %}
+          {{ post.tag }}
+        {% endif %}
+      </div>
+      <a class="post-preview__link" target="{{ link_to_target }}" href="{{ link_to_url }}">
+        <h3 class="body-limit">{{ include.post.title }}</h3>
+        <p class="body-limit">{{ include.post.excerpt }}</p>
+      </a>
+      <div class="post-preview__meta">
+        <date class="post-preview__date">
+          {{ include.post.date | date: '%b %d, %Y'  }}
+        </date>
+        <div class="post-preview__author">
+          <span class="post-preview__lighten">By:</span> {{ include.post.author }}
+        </div>
+      </div>
+    </div>
+    {% if include.up_next != "true" and include.post.thumbnail %}
+      <div class="post-preview__image">
+        <a target="{{ link_to_target }}" href="{{ link_to_url }}">
+          <img src="/images/{{ include.post.thumbnail }}" alt="{{ include.post.title }}">
+        </a>
+       </div>
+    {% endif %}
+  </div>
+</div>

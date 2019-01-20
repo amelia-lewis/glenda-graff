@@ -1,0 +1,6 @@
+<div class="image">
+  <img class="image__img" src="{{ include.src | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ include.src | replace: '-', ' ' | replace: '.jpg', ' ' | replace: '.png', ' ' }}">
+  {% if include.caption %}
+    <div class="image__caption">{{ include.caption | strip }}</div>
+  {% endif %}
+</div>
