@@ -15,6 +15,14 @@
 # in the templates via {{ site.myvariable }}.
 owner: Glenda Graff
 title: Glenda Graff
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: info@glendagraff.com.au
 phone: +61410572601
 phone_pretty: 0410 572 601

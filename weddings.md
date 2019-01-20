@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Weddings
-permalink: /weddings/
+permalink: "/weddings/"
+layout: page
 ---
 
 ![Weddings](../assets/img/weddings/0240_BUP250911.jpg)

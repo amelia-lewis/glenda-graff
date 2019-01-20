@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Home Styling
-permalink: /home-styling/
+permalink: "/home-styling/"
+layout: page
 ---
 
 ![Home Styling](../assets/img/home/home_001.JPG)

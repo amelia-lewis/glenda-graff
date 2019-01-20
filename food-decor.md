@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Food & Decor
-permalink: /food-decor/
+permalink: "/food-decor/"
+layout: page
 ---
 
 ![Food & Decor](../assets/img/food-decor/foodconcepts_001.jpg)
