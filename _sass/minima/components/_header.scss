@@ -49,8 +49,8 @@
     .page-link {
       text-transform: uppercase;
       margin: 0 $spacer-md;
-      padding: $spacer-mlg 0;
-      border-bottom: $spacer-xs solid transparent;
+      padding: $spacer-mlg 0 $spacer-md;
+      border-bottom: $spacer-sm solid transparent;
       transition: border-color 400ms;
 
       &:hover {
