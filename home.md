@@ -3,6 +3,7 @@ title: Home Styling
 permalink: "/home-styling/"
 layout: gallery
 ---
+
 ![Home Styling](../assets/img/home/home_001.JPG)
 ![Home Styling](../assets/img/home/home_006.JPG)
 ![Home Styling](../assets/img/home/home_011.JPG)

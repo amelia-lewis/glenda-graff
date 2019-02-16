@@ -3,6 +3,7 @@ title: Weddings
 permalink: "/weddings/"
 layout: gallery
 ---
+
 ![Weddings](../assets/img/weddings/0240_BUP250911.jpg)
 ![Weddings](../assets/img/weddings/0653_JMB220112.jpg)
 ![Weddings](../assets/img/weddings/1094_JMB220112.jpg)
