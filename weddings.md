@@ -1,9 +1,8 @@
 ---
 title: Weddings
 permalink: "/weddings/"
-layout: page
+layout: gallery
 ---
-
 ![Weddings](../assets/img/weddings/0240_BUP250911.jpg)
 ![Weddings](../assets/img/weddings/0653_JMB220112.jpg)
 ![Weddings](../assets/img/weddings/1094_JMB220112.jpg)
@@ -248,4 +247,4 @@ layout: page
 ![Weddings](../assets/img/weddings/IMG_0669.JPG)
 ![Weddings](../assets/img/weddings/0652_JMB220112.jpg)
 ![Weddings](../assets/img/weddings/1093_JMB220112.jpg)
-  img(src='img/IMG_0670.JPG')
+![Weddings](../assets/img/weddings/IMG_0670.JPG)

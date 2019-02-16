@@ -1,9 +1,8 @@
 ---
 title: Food & Decor
 permalink: "/food-decor/"
-layout: page
+layout: gallery
 ---
-
 ![Food & Decor](../assets/img/food-decor/foodconcepts_001.jpg)
 ![Food & Decor](../assets/img/food-decor/foodconcepts_008.JPG)
 ![Food & Decor](../assets/img/food-decor/foodconcepts_015.JPG)

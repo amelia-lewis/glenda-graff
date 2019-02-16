@@ -6,6 +6,30 @@ h1, h2, h3, h4, h5 {
   margin: 0 0 0.5em;
 }
 
+.h2-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.h2 {
+  position: relative;
+  font-size: 6em;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(-1 * 1600px - #{$spacer-lg});
+    width: 1600px;
+    height: 2px;
+    background: rgba($color-black, 0.1);
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -15,16 +39,7 @@ a {
   border-bottom: 1px solid rgba(black, 0.2);
   transition: all 400ms;
 
-  .svg-icon {
-    transition: all 400ms;
-  }
-
   &:hover {
-    color: $color-primary;
-    border-color: $color-primary;
-
-    .svg-icon {
-      fill: $color-primary;
-    }
+    border-color: $color-black;
   }
 }

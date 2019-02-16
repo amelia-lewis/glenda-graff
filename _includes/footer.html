@@ -1,6 +1,8 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <h2 class="footer-heading">Contact</h2>
+    <div class="h2-wrapper">
+      <h2 class="h2">Contact</h2>
+    </div>
 
     {%- include social.html -%}
 
@@ -12,7 +14,9 @@
       {%- if site.phone -%}
         <li><a class="link" href="tel:{{ site.phone }}">{{ site.phone_pretty }}</a></li>
       {%- endif -%}
+    </ul>
 
+    <ul class="address-list">
       {%- if site.address -%}
         <li>{{ site.address }}</li>
       {%- endif -%}

@@ -3,9 +3,13 @@
 // ===============
 
 $color-primary: #ceb78c;
+$color-primar-light: lighten($color-primary, 20%);
+$color-white: white;
 $color-gray-dark: #333333;
+$color-black: black;
 
-$fontstack: 'Muli', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$fontstack-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$fontstack-serif: 'Playfair Display', serif;
 
 $on-palm: 600px !default;
 $on-laptop: 800px !default;
@@ -22,3 +26,4 @@ $spacer-md: 16px;
 $spacer-mlg: 24px;
 $spacer-lg: 32px;
 $spacer-xl: 48px;
+$spacer-section: 3 * $spacer-xl;
