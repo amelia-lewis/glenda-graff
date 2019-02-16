@@ -4,7 +4,7 @@
 
 body {
   background: $color-primar-light;
-  color: $color-black;
+  color: $color-primary-dark;
   font-family: $fontstack-sans;
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ body {
 
 .wrapper {
   width: calc(100% - #{$spacer-lg});
-  max-width: 1200px;
+  max-width: $wrapper-width;
   margin: 0 auto;
 }
 

@@ -4,30 +4,22 @@
 
 .site-header {
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   top: 0;
   left: 0;
-  background: white;
   width: 100%;
-  padding: $spacer-md;
-  color: $color-gray-dark;
-  box-shadow: 0 3px 0 0 rgba(black, 0.1);
+  padding: $spacer-md 0;
   z-index: 100;
 
-  .site-title {
+  > .wrapper {
     display: flex;
     align-items: center;
-    font-size: 1.4em;
+    justify-content: space-between;
+  }
+
+  .site-title {
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
-    .site-title-icon {
-      width: $spacer-mlg;
-      height: $spacer-mlg;
-      margin: 0 $spacer-smd 0 0;
-    }
+    font-weight: 700;
   }
 
   .site-nav {
@@ -47,19 +39,13 @@
     }
 
     .page-link {
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       margin: 0 $spacer-md;
-      padding: $spacer-mlg 0 $spacer-md;
-      border-bottom: $spacer-sm solid transparent;
-      transition: border-color 400ms;
-
-      &:hover {
-        border-color: $color-primary;
-      }
     }
   }
 
   @include media-query($screen-md) {
-    padding: 0 $spacer-lg;
+    padding: $spacer-lg 0;
   }
 }

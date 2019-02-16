@@ -2,20 +2,17 @@
 // Gallery
 // ===============
 
-.gallery-title {
-  background: $color-primary;
-  color: white;
-  padding: $spacer-xl 0;
-}
-
-
 .gallery-content p {
-  column-count: 4;
+  column-count: 2;
   column-gap: $spacer-sm;
 
   img {
     display: block;
     margin: 0 0 $spacer-sm;
     width: 100%;
+  }
+
+  @include media-query($screen-md) {
+    column-count: 4;
   }
 }

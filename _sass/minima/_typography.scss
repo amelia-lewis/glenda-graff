@@ -10,10 +10,10 @@ h1, h2, h3, h4, h5 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin: 0 0 2em;
+  margin: 0 calc(-1 * #{$spacer-mlg}) 2em;
 
-  @include media-query($screen-md) {
-    margin: 0 0 5em;
+  @include media-query($screen-lg) {
+    margin: 0 calc(((100vw - #{$wrapper-width}) / 2) * -1 - #{$spacer-mlg}) 5em;
   }
 }
 
@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1em;
   letter-spacing: 0.1em;
   font-weight: 900;
+  color: $color-primary-dark;
   text-transform: uppercase;
 
   &:after {
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5 {
     left: calc(-1 * 1600px - #{$spacer-lg});
     width: 1600px;
     height: 2px;
-    background: rgba($color-black, 0.1);
+    background: rgba($color-primary-dark, 0.2);
   }
 
   @include media-query($screen-md) {
@@ -46,10 +47,10 @@ a {
 }
 
 .link {
-  border-bottom: 1px solid rgba(black, 0.2);
+  border-bottom: 1px solid rgba($color-primary-dark, 0.4);
   transition: all 400ms;
 
   &:hover {
-    border-color: $color-black;
+    border-color: $color-primary-dark;
   }
 }

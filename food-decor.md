@@ -1,5 +1,5 @@
 ---
-title: Food & Decor
+title: Food & Décor
 permalink: "/food-decor/"
 layout: gallery
 ---
