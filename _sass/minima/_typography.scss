@@ -3,20 +3,26 @@
 // ===============
 
 h1, h2, h3, h4, h5 {
-  margin: 0 0 0.5em;
+  margin: 0;
 }
 
 .h2-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin: 0 0 2em;
+
+  @include media-query($screen-md) {
+    margin: 0 0 5em;
+  }
 }
 
 .h2 {
   position: relative;
-  font-size: 6em;
+  font-size: 3em;
   line-height: 1em;
   letter-spacing: 0.1em;
+  font-weight: 900;
   text-transform: uppercase;
 
   &:after {
@@ -27,6 +33,10 @@ h1, h2, h3, h4, h5 {
     width: 1600px;
     height: 2px;
     background: rgba($color-black, 0.1);
+  }
+
+  @include media-query($screen-md) {
+    font-size: 6em;
   }
 }
 

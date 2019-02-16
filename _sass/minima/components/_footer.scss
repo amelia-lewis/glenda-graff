@@ -11,45 +11,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
 
     li {
-      margin: 0 $spacer-mlg;
-      font-size: 2.5em;
+      margin: 0 $spacer-mlg $spacer-mlg;
+      font-size: 1.5em;
       font-family: $fontstack-serif;
+      text-align: center;
 
-      a {
-
+      @include media-query($screen-md) {
+        margin: 0 $spacer-mlg $spacer-lg;
+        font-size: 2.5em;
       }
     }
-  }
-
-  .social-media-list,
-  .contact-list {
-    margin-bottom: $spacer-lg;
   }
 }
 
 .footer-copyright {
-  background: $color-black;
   padding: $spacer-smd $spacer-md;
   text-align: center;
-
-  p {
-    margin: 0;
-    color: rgba(white, 0.6);
-    font-size: 0.8em;
-
-    a {
-      border-bottom: 1px solid rgba(white, 0.6);
-      transition: all 400ms;
-
-      &:hover {
-        color: white;
-        border-color: white;
-      }
-    }
-  }
+  border-top: 1px solid rgba($color-black, 0.1);
 }
