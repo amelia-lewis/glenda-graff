@@ -2,6 +2,27 @@
 // Home
 // ===============
 
-.home {
-  
+.home-galleries {
+  padding: $spacer-section 0;
+
+  .gallery-link {
+    display: block;
+    text-align: center;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 1.5em;
+      font-family: $fontstack-serif;
+      margin: $spacer-mlg auto 0;
+
+      @include media-query($screen-md) {
+        font-size: 2.5em;
+      }
+    }
+  }
 }
