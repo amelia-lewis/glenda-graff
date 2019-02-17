@@ -2,9 +2,9 @@
 // Variables
 // ===============
 
-$color-primar-dark: darken($color-primary, 10%);
 $color-primary: #ceb78c;
-$color-primar-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 50%);
+$color-primary-light: lighten($color-primary, 10%);
 $color-white: white;
 $color-gray-dark: #333333;
 $color-black: black;
