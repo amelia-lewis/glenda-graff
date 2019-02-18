@@ -19,7 +19,7 @@
   .site-title {
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: bold;
   }
 
   .site-nav {
@@ -46,6 +46,6 @@
   }
 
   @include media-query($screen-md) {
-    padding: $spacer-lg 0;
+    padding: $spacer-xl 0;
   }
 }

@@ -31,35 +31,37 @@ h1, h2, h3, h4, h5, p {
 .h2-wrapper {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  margin: 0 calc(-1 * #{$spacer-mlg}) 2em;
+  // margin: 0 calc(-1 * #{$spacer-mlg}) 1em;
+  margin: 0 0 1em;
 
   @include media-query($screen-lg) {
-    margin: 0 calc(((100vw - #{$wrapper-width}) / 2) * -1 - #{$spacer-mlg}) 5em;
+    // margin: 0 calc(((100vw - #{$wrapper-width}) / 2) * -1 - #{$spacer-mlg}) 5em;
+    margin: 0 0 5em;
+    justify-content: flex-end;
   }
 }
 
 .h2 {
   position: relative;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1em;
-  letter-spacing: 0.1em;
   font-weight: 900;
   color: $color-primary-dark;
   text-transform: uppercase;
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 1px);
-    left: calc(-1 * 1600px - #{$spacer-lg});
-    width: 1600px;
-    height: 2px;
-    background: rgba($color-primary-dark, 0.2);
-  }
-
   @include media-query($screen-md) {
     font-size: 5em;
+    letter-spacing: 0.1em;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 1px);
+      left: calc(-1 * 1600px - #{$spacer-lg});
+      width: 1600px;
+      height: 2px;
+      background: rgba($color-primary-dark, 0.2);
+    }
   }
 }
 

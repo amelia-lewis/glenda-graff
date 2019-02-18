@@ -3,30 +3,39 @@
 // ===============
 
 .site-footer {
-  padding: $spacer-section 0;
+  padding: $spacer-xl 0;
 
   .social-media-list,
   .contact-list,
   .address-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
 
     li {
-      margin: 0 $spacer-mlg $spacer-mlg;
-      font-size: 1.5em;
+      margin: 0 0 $spacer-mlg;
+      font-size: 1.2em;
       font-family: $fontstack-serif;
-      text-align: center;
+    }
 
-      @include media-query($screen-md) {
+    @include media-query($screen-md) {
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      li {
         margin: 0 $spacer-mlg $spacer-lg;
         font-size: 2em;
+        text-align: center;
       }
     }
+  }
+
+  @include media-query($screen-md) {
+    padding: 3 * $spacer-xl 0;
   }
 }
 

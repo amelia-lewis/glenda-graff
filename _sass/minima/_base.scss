@@ -2,6 +2,10 @@
 // Base
 // ===============
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $color-primary-light;
   color: $color-black;
@@ -22,8 +26,11 @@ body {
 }
 
 .page-content {
-  margin-top: 68px; // header height
-  padding: $spacer-xl 0;
+  margin-top: $header-height-bp1;
+
+  @include media-query($screen-md) {
+    margin-top: $header-height-bp2;
+  }
 }
 
 .svg-icon {

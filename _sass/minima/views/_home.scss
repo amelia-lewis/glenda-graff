@@ -5,7 +5,73 @@
 .home-about,
 .home-galleries,
 .home-testimonials {
-  padding: $spacer-section 0;
+  padding: $spacer-xl 0;
+
+  @include media-query($screen-md) {
+    padding: 3 * $spacer-xl 0;
+  }
+}
+
+.home-masthead {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: $spacer-xl 0 0;
+
+  .masthead-img {
+    display: none;
+  }
+
+  .masthead-title {
+    display: inline-block;
+    font-size: 3em;
+    line-height: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: right;
+  }
+
+  .masthead-subtitle {
+    font-size: 1.5em;
+    font-family: $fontstack-serif;
+    font-weight: normal;
+    margin: 0 0 $spacer-lg auto;
+  }
+
+  .flower {
+    width: 100px;
+  }
+
+  @include media-query($screen-md) {
+    padding: 4 * $spacer-xl 0 0;
+
+    .masthead-img {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: calc(100vh - #{$header-height-bp2});
+      background: url('/assets/img/masthead.jpg') no-repeat center;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    .masthead-title {
+      font-size: 9em;
+    }
+
+    .masthead-subtitle {
+      font-size: 3em;
+      margin: 0 2.25 * $spacer-xl $spacer-xl auto;
+    }
+
+    .flower {
+      align-self: center;
+      width: 200px;
+    }
+  }
 }
 
 .home-about {
@@ -17,6 +83,7 @@
 .gallery-link {
   display: block;
   text-align: center;
+  margin: 0 0 $spacer-lg;
 
   img {
     display: block;
@@ -25,7 +92,7 @@
 
   span {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: $fontstack-serif;
     margin: $spacer-mlg auto 0;
 
