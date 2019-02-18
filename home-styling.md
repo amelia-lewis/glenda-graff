@@ -2,7 +2,7 @@
 title: Home Styling
 permalink: "/home-styling/"
 layout: gallery
-group: "navigation"
+group: navigation
 ---
 
 ![Home Styling](../assets/img/home-styling/home_001.JPG)
