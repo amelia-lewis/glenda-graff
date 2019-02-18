@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, p {
   font-size: 2em;
   line-height: 1em;
   font-weight: 900;
-  color: $color-primary-dark;
+  color: $color-black;
   text-transform: uppercase;
 
   @include media-query($screen-md) {
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, p {
       left: calc(-1 * 1600px - #{$spacer-lg});
       width: 1600px;
       height: 1px;
-      background: rgba($color-primary-dark, 0.2);
+      background: $color-black;
     }
   }
 }
