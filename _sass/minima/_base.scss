@@ -29,7 +29,7 @@ body {
   margin-top: $header-height-bp1;
 
   @include media-query($screen-md) {
-    margin-top: $header-height-bp2;
+    margin-top: $header-height-bp2 + $spacer-lg;
   }
 }
 

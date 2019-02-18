@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, p {
       top: calc(50% - 1px);
       left: calc(-1 * 1600px - #{$spacer-lg});
       width: 1600px;
-      height: 2px;
+      height: 1px;
       background: rgba($color-primary-dark, 0.2);
     }
   }

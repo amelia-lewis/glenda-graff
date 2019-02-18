@@ -25,3 +25,10 @@ theme: minima
 plugins:
 - jekyll-feed
 show_excerpts: true
+navigation:
+  - title: Food & Décor
+    url: /food-decor/
+  - title: Home Styling
+    url: /home-styling/
+  - title: Weddings
+    url: /weddings/

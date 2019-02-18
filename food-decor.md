@@ -2,6 +2,7 @@
 title: Food & Décor
 permalink: "/food-decor/"
 layout: gallery
+group: "navigation"
 ---
 
 ![Food & Decor](../assets/img/food-decor/foodconcepts_001.jpg)

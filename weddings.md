@@ -2,6 +2,7 @@
 title: Weddings
 permalink: "/weddings/"
 layout: gallery
+group: "navigation"
 ---
 
 ![Weddings](../assets/img/weddings/0240_BUP250911.jpg)
