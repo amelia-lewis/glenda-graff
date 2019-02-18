@@ -2,7 +2,29 @@
 // Typography
 // ===============
 
-h1, h2, h3, h4, h5 {
+@font-face {
+    font-family: 'NeuzeitGrotesk';
+    src: url('/assets/fonts/neuzeit.eot');
+    src: url('/assets/fonts/neuzeit.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/neuzeit.woff') format('woff'),
+         url('/assets/fonts/neuzeit.ttf') format('truetype'),
+         url('/assets/fonts/neuzeit.svg#neuzeitgrototregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeuzeitGrotesk';
+    src: url('/assets/fonts/neuzeit-bold.eot');
+    src: url('/assets/fonts/neuzeit-bold.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/neuzeit-bold.woff') format('woff'),
+         url('/assets/fonts/neuzeit-bold.ttf') format('truetype'),
+         url('/assets/fonts/neuzeit-bold.svg#neuzeitgrototbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, p {
   margin: 0;
 }
 
@@ -37,8 +59,13 @@ h1, h2, h3, h4, h5 {
   }
 
   @include media-query($screen-md) {
-    font-size: 6em;
+    font-size: 5em;
   }
+}
+
+p {
+  line-height: 1.4em;
+  margin: 0 0 0.5em;
 }
 
 a {

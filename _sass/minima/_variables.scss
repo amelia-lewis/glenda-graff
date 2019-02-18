@@ -4,12 +4,12 @@
 
 $color-primary: #ceb78c;
 $color-primary-dark: darken($color-primary, 50%);
-$color-primary-light: lighten($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 12%);
 $color-white: white;
 $color-gray-dark: #333333;
 $color-black: black;
 
-$fontstack-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$fontstack-sans: 'NeuzeitGrotesk', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 $fontstack-serif: 'Playfair Display', serif;
 
 $on-palm: 600px !default;
