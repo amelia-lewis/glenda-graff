@@ -9,32 +9,14 @@ layout: default
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
-    <section class="home-testimonials">
-      <div class="h2-wrapper">
-        <h2 class="h2">Testimonials</h2>
+  <section class="home-about">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <p>Since arriving in Australia in 1995 from South Africa, Glenda Graff has established herself as one of Sydney's leading wedding and party planners. A qualified chef, Glenda offers her services as a caterer, food and décor stylist and event manager. Glenda's wealth of experience ensures that your function, from concept through to planning and execution is seamless.</p>
+        <p>Whether you are planning a wedding, party or corporate function, Glenda and her team of professionals will ensure that your function is unique, distinct and exceptional.</p>
       </div>
-      <ul class="testimonial-list">
-        {%- for post in site.posts -%}
-          {% if post.categories contains "testimonial" %}
-            <li>
-              <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} -->
-              <!-- <span class="post-meta">{{ post.date | date: date_format }}</span> -->
-              <!-- <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                  {{ post.title | escape }}
-                </a>
-              </h3> -->
-              {%- if site.show_excerpts -%}
-                <p>{{ post.excerpt }}</p>
-              {%- endif -%}
-              <p class="testimonial-customer">{{ post.customer }}</p>
-            </li>
-          {%- endif -%}
-        {%- endfor -%}
-      </ul>
-    </section>
-  {%- endif -%}
+    </div>
+  </section>
 
   <section class="home-galleries">
     <div class="h2-wrapper">
@@ -62,5 +44,32 @@ layout: default
       </div>
     </div>
   </section>
+
+  {%- if site.posts.size > 0 -%}
+    <section class="home-testimonials">
+      <div class="h2-wrapper">
+        <h2 class="h2">Testimonials</h2>
+      </div>
+      <ul class="testimonial-list">
+        {%- for post in site.posts -%}
+          {% if post.categories contains "testimonial" %}
+            <li>
+              <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} -->
+              <!-- <span class="post-meta">{{ post.date | date: date_format }}</span> -->
+              <!-- <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </h3> -->
+              {%- if site.show_excerpts -%}
+                <p>{{ post.excerpt }}</p>
+              {%- endif -%}
+              <p class="testimonial-customer">{{ post.customer }}</p>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </section>
+  {%- endif -%}
 
 </div>

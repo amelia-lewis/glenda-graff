@@ -2,9 +2,37 @@
 // Home
 // ===============
 
-.home-testimonials,
-.home-galleries {
+.home-about,
+.home-galleries,
+.home-testimonials {
   padding: $spacer-section 0;
+}
+
+.home-about {
+  @include media-query($screen-md) {
+    text-align: center;
+  }
+}
+
+.gallery-link {
+  display: block;
+  text-align: center;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  span {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: $fontstack-serif;
+    margin: $spacer-mlg auto 0;
+
+    @include media-query($screen-md) {
+      font-size: 2em;
+    }
+  }
 }
 
 .testimonial-list {
@@ -29,26 +57,5 @@
 
   @include media-query($screen-md) {
     column-count: 3;
-  }
-}
-
-.gallery-link {
-  display: block;
-  text-align: center;
-
-  img {
-    display: block;
-    width: 100%;
-  }
-
-  span {
-    display: inline-block;
-    font-size: 1.5em;
-    font-family: $fontstack-serif;
-    margin: $spacer-mlg auto 0;
-
-    @include media-query($screen-md) {
-      font-size: 2em;
-    }
   }
 }
