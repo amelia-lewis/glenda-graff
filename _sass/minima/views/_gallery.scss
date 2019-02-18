@@ -13,6 +13,10 @@
     cursor: pointer;
   }
 
+  @include media-query($screen-sm) {
+    column-count: 3;
+  }
+
   @include media-query($screen-md) {
     column-count: 4;
   }
@@ -43,19 +47,21 @@
   left: 50%;
   transform: translate(-50%, -50%) rotateY(0deg);
   max-height: 95vh;
-  max-width: calc(95vw - 100px);
+  max-width: 110vw;
   transition: 0.8s cubic-bezier(0.7, 0, 0.4, 1);
   transform-style: preserve-3d;
 }
 
 [class^="arrow"] {
-  height: 200px;
-  width: 50px;
-  background: rgba(0, 0, 0, 0.4);
+  height: $spacer-lg;
+  width: $spacer-lg;
+  background: rgba($color-black, 0.6);
   position: absolute;
   top: 50%;
+  border-radius: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  z-index: 10;
 }
 
 [class^="arrow"]:after {
@@ -64,35 +70,39 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-  width: 15px;
-  height: 15px;
+  width: $spacer-smd;
+  height: $spacer-smd;
 }
 
 .arrowr {
-  right: 0;
+  right: $spacer-md;
 }
 
 .arrowr:after {
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+  border-right: 1px solid $color-white;
+  border-bottom: 1px solid $color-white;
+  margin: 0 0 0 -3px;
 }
 
 .arrowl {
-  left: 0;
+  left: $spacer-md;
 }
 
 .arrowl:after {
-  border-left: 1px solid white;
-  border-top: 1px solid white;
+  border-left: 1px solid $color-white;
+  border-top: 1px solid $color-white;
+  margin: 0 0 0 3px;
 }
 
 .close {
   position: absolute;
+  top: 0;
   right: 0;
-  width: 50px;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.4);
-  margin: 20px;
+  width: $spacer-lg;
+  height: $spacer-lg;
+  background: rgba($color-black, 0.6);
+  margin: $spacer-md;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -103,8 +113,8 @@
   top: 50%;
   left: 50%;
   width: 1px;
-  height: 100%;
-  background: #e74c3c;
+  height: $spacer-md;
+  background: $color-white;
 }
 
 .close:after {
@@ -122,4 +132,29 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@include media-query($screen-md) {
+  .close {
+    width: $spacer-xl;
+    height: $spacer-xl;
+    margin: $spacer-lg;
+  }
+
+  [class^="arrow"] {
+    height: $spacer-xl;
+    width: $spacer-xl;
+  }
+
+  .arrowr {
+    right: $spacer-lg;
+  }
+
+  .arrowl {
+    left: $spacer-lg;
+  }
+
+  .lightbox img {
+    max-width: calc(95vw - 100px);
+  }
 }

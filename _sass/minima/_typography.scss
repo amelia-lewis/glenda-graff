@@ -51,16 +51,16 @@ h1, h2, h3, h4, h5, p {
 
   @include media-query($screen-md) {
     font-size: 5em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
 
     &:after {
       content: "";
       position: absolute;
-      top: calc(50% - 1px);
+      top: calc(50% - (#{$spacer-sm} / 2));
       left: calc(-1 * 1600px - #{$spacer-lg});
       width: 1600px;
-      height: 1px;
-      background: $color-black;
+      height: $spacer-sm;
+      background: rgba($color-primary, 0.5);
     }
   }
 }
@@ -76,7 +76,7 @@ a {
 }
 
 .link {
-  border-bottom: 1px solid rgba($color-primary-dark, 0.4);
+  border-bottom: 2px solid rgba($color-primary-dark, 0.5);
   transition: all 400ms;
 
   &:hover {
