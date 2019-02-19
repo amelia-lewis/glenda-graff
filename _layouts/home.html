@@ -4,17 +4,17 @@ layout: default
 
 <div class="home">
   <section class="home-masthead">
-    <div class="masthead-img js-tilt" data-tilt></div>
-    <h1 class="masthead-title">{{ site.owner }}</h1>
-    <h3 class="masthead-subtitle">Event Management</h3>
-    <img src="/assets/img/flower.svg" class="flower" />
+    <div class="masthead-img js-tilt" data-tilt data-aos="fade-right" data-aos-duration="1000"></div>
+    <h1 class="masthead-title" data-aos="fade-left" data-aos-duration="1000">{{ site.owner }}</h1>
+    <h3 class="masthead-subtitle" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">Event Management</h3>
+    <img src="/assets/img/flower.svg" class="flower" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" />
   </section>
 
   {{ content }}
 
   <section class="home-about">
     <div class="row">
-      <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
         <p>Since arriving in Australia in 1995 from South Africa, Glenda Graff has established herself as one of Sydney's leading wedding and party planners. A qualified chef, Glenda offers her services as a caterer, food and décor stylist and event manager. Glenda's wealth of experience ensures that your function, from concept through to planning and execution is seamless.</p>
         <p>Whether you are planning a wedding, party or corporate function, Glenda and her team of professionals will ensure that your function is unique, distinct and exceptional.</p>
       </div>
@@ -22,25 +22,25 @@ layout: default
   </section>
 
   <section class="home-galleries">
-    <div class="h2-wrapper">
+    <div class="h2-wrapper" data-aos="fade-in" data-aos-duration="1000">
       <h2 class="h2">Galleries</h2>
     </div>
 
     <div class="row">
       <div class="col-xs-12 col-md-4">
-        <a href="/food-decor" class="gallery-link">
+        <a href="/food-decor" class="gallery-link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
           <img src="/assets/img/food-decor.jpg" alt="Food & Décor" class="js-tilt" data-tilt />
           <span class="link">Food &amp; Décor</span>
         </a>
       </div>
       <div class="col-xs-12 col-md-4">
-        <a href="/home-styling" class="gallery-link">
+        <a href="/home-styling" class="gallery-link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <img src="/assets/img/home-styling.jpg" alt="Home Styling" class="js-tilt" data-tilt />
           <span class="link">Home Styling</span>
         </a>
       </div>
       <div class="col-xs-12 col-md-4">
-        <a href="/weddings" class="gallery-link">
+        <a href="/weddings" class="gallery-link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
           <img src="/assets/img/weddings.jpg" alt="Weddings" class="js-tilt" data-tilt />
           <span class="link">Weddings</span>
         </a>
@@ -50,13 +50,13 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <section class="home-testimonials">
-      <div class="h2-wrapper">
+      <div class="h2-wrapper" data-aos="fade-in" data-aos-duration="1000">
         <h2 class="h2">Testimonials</h2>
       </div>
       <div class="testimonial-list">
         {%- for post in site.posts -%}
           {% if post.categories contains "testimonial" %}
-            <div class="testimonial-item">
+            <div class="testimonial-item" data-aos="fade-in" data-aos-duration="1000">
               {%- if site.show_excerpts -%}
                 <p>{{ post.excerpt }}</p>
               {%- endif -%}
