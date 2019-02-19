@@ -103,13 +103,22 @@
 }
 
 .testimonial-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  li {
+  .testimonial-item {
     display: inline-block;
+    position: relative;
     margin: 0 0 $spacer-lg;
+    padding: 0 $spacer-lg 0 0;
+
+    &:after {
+      content: '“';
+      position: absolute;
+      top: -1 * ($spacer-xl + $spacer-md);
+      left: -1 * $spacer-lg;
+      font-family: $fontstack-serif;
+      font-size: 8em;
+      color: rgba($color-primary, 0.5);
+      z-index: -1;
+    }
 
     .testimonial-customer {
       font-size: 0.8em;
@@ -118,11 +127,15 @@
   }
 
   @include media-query($screen-sm) {
-    column-count: 2;
+    -webkit-columns: 2 400px;
+    -moz-columns: 2 400px;
+    columns: 2 400px;
     column-gap: $spacer-md;
   }
 
   @include media-query($screen-md) {
-    column-count: 3;
+    -webkit-columns: 3 400px;
+    -moz-columns: 3 400px;
+    columns: 3 400px;
   }
 }

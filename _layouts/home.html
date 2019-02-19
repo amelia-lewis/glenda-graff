@@ -53,18 +53,18 @@ layout: default
       <div class="h2-wrapper">
         <h2 class="h2">Testimonials</h2>
       </div>
-      <ul class="testimonial-list">
+      <div class="testimonial-list">
         {%- for post in site.posts -%}
           {% if post.categories contains "testimonial" %}
-            <li>
+            <div class="testimonial-item">
               {%- if site.show_excerpts -%}
                 <p>{{ post.excerpt }}</p>
               {%- endif -%}
               <p class="testimonial-customer">{{ post.customer }}</p>
-            </li>
+            </div>
           {%- endif -%}
         {%- endfor -%}
-      </ul>
+      </div>
     </section>
   {%- endif -%}
 
