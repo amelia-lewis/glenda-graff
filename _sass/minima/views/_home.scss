@@ -24,20 +24,7 @@
     display: none;
   }
 
-  .masthead-title {
-    display: inline-block;
-    font-size: 3em;
-    line-height: 0.9em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
   .masthead-subtitle {
-    font-size: 1.5em;
-    line-height: 1em;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
     width: 100%;
     border-top: 4px solid $color-black;
     margin: $spacer-sm auto $spacer-lg 0;
@@ -64,12 +51,10 @@
     }
 
     .masthead-title {
-      font-size: 9em;
       text-align: right;
     }
 
     .masthead-subtitle {
-      font-size: 2.4em;
       width: 50%;
       text-align: center;
       margin: $spacer-sm 0 $spacer-xl auto;

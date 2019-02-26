@@ -17,8 +17,6 @@
 
     li {
       margin: 0 0 $spacer-mlg;
-      font-size: 1.2em;
-      font-family: $fontstack-serif;
     }
 
     @include media-query($screen-md) {
@@ -28,7 +26,6 @@
 
       li {
         margin: 0 $spacer-mlg $spacer-lg;
-        font-size: 2em;
         text-align: center;
       }
     }
@@ -42,5 +39,10 @@
 .footer-copyright {
   padding: $spacer-smd $spacer-md;
   text-align: center;
-  border-top: 1px solid rgba($color-black, 0.1);
+  background: rgba($color-primary-dark, 0.1);
+
+  p {
+    font-size: 0.8em;
+    margin: 0;
+  }
 }

@@ -28,33 +28,52 @@ h1, h2, h3, h4, h5, p {
   margin: 0;
 }
 
-.h2-wrapper {
-  display: flex;
-  align-items: center;
-  // margin: 0 calc(-1 * #{$spacer-mlg}) 1em;
-  margin: 0 0 1em;
+.h1,
+.h2,
+.h3,
+.h4 {
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+}
 
-  @include media-query($screen-lg) {
-    // margin: 0 calc(((100vw - #{$wrapper-width}) / 2) * -1 - #{$spacer-mlg}) 5em;
-    margin: 0 0 5em;
-    justify-content: flex-end;
+.h1 {
+  font-size: 3em;
+  line-height: 0.9em;
+  letter-spacing: 0.1em;
+
+  @include media-query($screen-md) {
+    font-size: 9em;
   }
 }
 
 .h2 {
-  position: relative;
   font-size: 2em;
-  line-height: 1em;
-  font-weight: 900;
-  text-transform: uppercase;
   margin: 0 0 $spacer-md;
 
   @include media-query($screen-md) {
     font-size: 4.5em;
-    letter-spacing: 0.05em;
     margin: 0 0 $spacer-lg;
   }
 }
+
+.h3 {
+  font-size: 1.5em;
+
+  @include media-query($screen-md) {
+    font-size: 2.4em;
+  }
+}
+
+.h4 {
+  font-size: 1.2em;
+
+  @include media-query($screen-md) {
+    font-size: 2em;
+  }
+}
+
 
 p {
   line-height: 1.4em;
@@ -68,7 +87,7 @@ a {
 
 .link {
   border-bottom: 2px solid rgba($color-primary-dark, 0.5);
-  transition: all 400ms;
+  transition: border-color 400ms;
 
   &:hover {
     border-color: $color-primary-dark;

@@ -4,17 +4,17 @@
 
     <ul class="contact-list">
       {%- if site.email -%}
-        <li><a class="link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><a class="link h4" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
       {%- endif -%}
 
       {%- if site.phone -%}
-        <li><a class="link" href="tel:{{ site.phone }}">{{ site.phone_pretty }}</a></li>
+        <li><a class="link h4" href="tel:{{ site.phone }}">{{ site.phone_pretty }}</a></li>
       {%- endif -%}
     </ul>
 
     <ul class="address-list">
       {%- if site.address -%}
-        <li>{{ site.address }}</li>
+        <li class="h4">{{ site.address }}</li>
       {%- endif -%}
     </ul>
   </div>
