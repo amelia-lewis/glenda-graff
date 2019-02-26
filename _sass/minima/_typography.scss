@@ -46,22 +46,13 @@ h1, h2, h3, h4, h5, p {
   font-size: 2em;
   line-height: 1em;
   font-weight: 900;
-  color: $color-black;
   text-transform: uppercase;
+  margin: 0 0 $spacer-md;
 
   @include media-query($screen-md) {
-    font-size: 5em;
+    font-size: 4.5em;
     letter-spacing: 0.05em;
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: calc(50% - (#{$spacer-sm} / 2));
-      left: calc(-1 * 1600px - #{$spacer-lg});
-      width: 1600px;
-      height: $spacer-sm;
-      background: rgba($color-primary, 0.5);
-    }
+    margin: 0 0 $spacer-lg;
   }
 }
 

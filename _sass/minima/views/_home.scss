@@ -16,7 +16,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  text-align: center;
   padding: $spacer-xl 0 0;
 
   .masthead-img {
@@ -29,18 +30,22 @@
     line-height: 0.9em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    text-align: right;
   }
 
   .masthead-subtitle {
     font-size: 1.5em;
-    font-family: $fontstack-serif;
-    font-weight: normal;
-    margin: 0 0 $spacer-lg auto;
+    line-height: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 100%;
+    border-top: 4px solid $color-black;
+    margin: $spacer-sm auto $spacer-lg 0;
+    padding: $spacer-smd 0 0;
   }
 
   .flower {
-    width: 100px;
+    width: 80px;
   }
 
   @include media-query($screen-md) {
@@ -60,11 +65,15 @@
 
     .masthead-title {
       font-size: 9em;
+      text-align: right;
     }
 
     .masthead-subtitle {
-      font-size: 3em;
-      margin: 0 2.25 * $spacer-xl $spacer-xl auto;
+      font-size: 2.4em;
+      width: 50%;
+      text-align: center;
+      margin: $spacer-sm 0 $spacer-xl auto;
+      padding: $spacer-lg 0 0;
     }
 
     .flower {
@@ -75,29 +84,54 @@
 }
 
 .home-about {
-  @include media-query($screen-md) {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .gallery-link {
-  display: block;
-  text-align: center;
-  margin: 0 0 $spacer-lg;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 $spacer-xl;
+  transform-style: preserve-3d;
 
   img {
     display: block;
-    width: 100%;
+    width: calc(100% + #{$spacer-lg});
+    height: auto;
+    box-shadow: 0 $spacer-sm $spacer-mlg rgba($color-primary, 0.4);
+    margin: 0 -1 * $spacer-md -1 * $spacer-md;
   }
 
   span {
-    display: inline-block;
-    font-size: 1.2em;
-    font-family: $fontstack-serif;
-    margin: $spacer-mlg auto 0;
+    transform: translateZ(20px);
+  }
 
-    @include media-query($screen-md) {
-      font-size: 2em;
+  @include media-query($screen-sm) {
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      width: 60%;
+      margin: 0;
+    }
+
+    span {
+      margin: 0 0 0 -1 * $spacer-xl;
+    }
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+
+      span {
+        text-align: right;
+        margin: 0 -2 * $spacer-xl 0 0;
+      }
+    }
+  }
+
+  @include media-query($screen-md) {
+    span {
+      margin: 0 0 0 -2 * $spacer-xl;
     }
   }
 }
@@ -126,16 +160,10 @@
     }
   }
 
-  @include media-query($screen-sm) {
+  @include media-query($screen-md) {
     -webkit-columns: 2 400px;
     -moz-columns: 2 400px;
     columns: 2 400px;
     column-gap: $spacer-md;
-  }
-
-  @include media-query($screen-md) {
-    -webkit-columns: 3 400px;
-    -moz-columns: 3 400px;
-    columns: 3 400px;
   }
 }

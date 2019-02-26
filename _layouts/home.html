@@ -22,27 +22,19 @@ layout: default
   </section>
 
   <section class="home-galleries">
-    <div class="h2-wrapper" data-aos="fade-in" data-aos-duration="1000">
-      <h2 class="h2">Galleries</h2>
-    </div>
-
     <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <a href="/food-decor" class="gallery-link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-          <img src="/assets/img/food-decor.jpg" alt="Food & Décor" class="js-tilt" data-tilt />
-          <span class="link">Food &amp; Décor</span>
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <a href="/food-decor" class="gallery-link js-tilt" data-tilt data-aos="fade-in" data-aos-duration="1000">
+          <img src="/assets/img/food-decor.jpg" alt="Food & Décor" />
+          <span class="h2">Food &amp; Décor</span>
         </a>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <a href="/home-styling" class="gallery-link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-          <img src="/assets/img/home-styling.jpg" alt="Home Styling" class="js-tilt" data-tilt />
-          <span class="link">Home Styling</span>
+        <a href="/home-styling" class="gallery-link js-tilt" data-tilt data-aos="fade-in" data-aos-duration="1000">
+          <img src="/assets/img/home-styling.jpg" alt="Home Styling" />
+          <span class="h2">Home Styling</span>
         </a>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <a href="/weddings" class="gallery-link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-          <img src="/assets/img/weddings.jpg" alt="Weddings" class="js-tilt" data-tilt />
-          <span class="link">Weddings</span>
+        <a href="/weddings" class="gallery-link js-tilt" data-tilt data-aos="fade-in" data-aos-duration="1000">
+          <img src="/assets/img/weddings.jpg" alt="Weddings" />
+          <span class="h2">Wedd—<br />ings</span>
         </a>
       </div>
     </div>
@@ -50,20 +42,24 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <section class="home-testimonials">
-      <div class="h2-wrapper" data-aos="fade-in" data-aos-duration="1000">
-        <h2 class="h2">Testimonials</h2>
-      </div>
-      <div class="testimonial-list">
-        {%- for post in site.posts -%}
-          {% if post.categories contains "testimonial" %}
-            <div class="testimonial-item" data-aos="fade-in" data-aos-duration="1000">
-              {%- if site.show_excerpts -%}
-                <p>{{ post.excerpt }}</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <h2 class="h2" data-aos="fade-in" data-aos-duration="1000">Testim—<br />onials</h2>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+          <div class="testimonial-list">
+            {%- for post in site.posts -%}
+              {% if post.categories contains "testimonial" %}
+                <div class="testimonial-item" data-aos="fade-in" data-aos-duration="1000">
+                  {%- if site.show_excerpts -%}
+                    <p>{{ post.excerpt }}</p>
+                  {%- endif -%}
+                  <p class="testimonial-customer">{{ post.customer }}</p>
+                </div>
               {%- endif -%}
-              <p class="testimonial-customer">{{ post.customer }}</p>
-            </div>
-          {%- endif -%}
-        {%- endfor -%}
+            {%- endfor -%}
+          </div>
+        </div>
       </div>
     </section>
   {%- endif -%}
