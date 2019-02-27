@@ -21,7 +21,8 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 2px 8px 1px;
+    padding: 2px $spacer-sm 1px;
+    margin: 0 0 0 -1 * $spacer-sm;
     transition: background-color 400ms;
 
     &:hover {
@@ -46,7 +47,7 @@
       top: 58px;
       left: 0;
       background: $color-primary-light;
-      padding: 0 0 $spacer-sm;
+      padding: $spacer-sm 0;
 
       @include media-query($screen-md) {
         display: flex;
@@ -64,7 +65,7 @@
       cursor: pointer;
 
       .menu-icon {
-
+        margin: 0 -1 * $spacer-sm 0 0;
       }
     }
 
@@ -102,6 +103,6 @@
 
   @include media-query($screen-md) {
     padding: $spacer-xl 0;
-    background: rgba($color-primary-light, 0.8);
+    background: transparent;
   }
 }
