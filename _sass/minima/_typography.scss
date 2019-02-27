@@ -51,6 +51,8 @@ h1, h2, h3, h4, h5, p {
 .h2 {
   font-size: 2em;
   margin: 0 0 $spacer-md;
+  word-break: break-word;
+  hyphens: auto;
 
   @include media-query($screen-md) {
     font-size: 4.5em;

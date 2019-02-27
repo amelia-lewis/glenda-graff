@@ -122,6 +122,10 @@
 }
 
 .testimonial-list {
+  .h2 {
+    padding-right: $spacer-md;
+  }
+  
   .testimonial-item {
     display: inline-block;
     position: relative;
