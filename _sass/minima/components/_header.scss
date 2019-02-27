@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  background: $color-primary-light;
   padding: $spacer-md 0;
   z-index: 100;
 
@@ -20,18 +21,17 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: 2px;
-    padding: 2px 4px 1px;
+    padding: 2px 8px 1px;
     transition: background-color 400ms;
 
     &:hover {
-      background-color: rgba($color-primary, 0.5);
+      background-color: $color-primary;
     }
   }
 
   .site-nav {
     label[for="nav-trigger"],
-    .nav-trigger {
+    #nav-trigger {
       @include media-query($screen-md) {
         display: none;
       }
@@ -39,28 +39,69 @@
 
     .trigger {
       display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      position: fixed;
+      width: 100%;
+      top: 58px;
+      left: 0;
+      background: $color-primary-light;
+      padding: 0 0 $spacer-sm;
 
       @include media-query($screen-md) {
         display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        top: auto;
+        left: auto;
+        background: none;
+        padding: 0;
       }
+    }
+
+    label[for="nav-trigger"] {
+      cursor: pointer;
+
+      .menu-icon {
+
+      }
+    }
+
+    #nav-trigger {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 0;
+      height: 0;
+      margin: 0;
+    }
+
+    #nav-trigger:checked + .trigger {
+      display: flex;
     }
 
     .page-link {
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      margin: 0 $spacer-md;
-      border-radius: 2px;
-      padding: 2px 4px 1px;
+      margin: 0 0 $spacer-sm;
+      padding: 2px $spacer-md 1px;
       transition: background-color 400ms;
 
       &:hover,
       &.active {
-        background-color: rgba($color-primary, 0.5);
+        background-color: $color-primary;
+      }
+
+      @include media-query($screen-md) {
+        margin: 0 $spacer-md;
+        padding: 2px $spacer-sm 1px;
       }
     }
   }
 
   @include media-query($screen-md) {
     padding: $spacer-xl 0;
+    background: rgba($color-primary-light, 0.8);
   }
 }

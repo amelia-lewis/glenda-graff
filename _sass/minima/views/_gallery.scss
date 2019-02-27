@@ -16,10 +16,6 @@
   @include media-query($screen-sm) {
     column-count: 3;
   }
-
-  @include media-query($screen-md) {
-    column-count: 4;
-  }
 }
 
 .lightbox {
