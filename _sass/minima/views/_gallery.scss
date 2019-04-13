@@ -2,6 +2,18 @@
 // Gallery
 // ===============
 
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 -420px 0;
+
+  .flower {
+    transform: rotateY(180deg);
+    margin: 0 -2 * $spacer-xl 0 0;
+    z-index: 10;
+  }
+}
+
 .gallery-content p {
   column-count: 2;
   column-gap: $spacer-sm;
